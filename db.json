@@ -1,509 +1,236 @@
-[
-  {
-      "eventName": "event_0",
-      "stateName": "state_0",
-      "className": "ClassName0",
-      "schemaName": "schema_name_0",
-      "schemaVersion": ":2.1.5",
-      "mappings": [
+{
+    "events": [
+      {
+        "eventName": "mobile:transport:booking:created",
+        "stateName": "",
+        "className": "TransportBookingCreated",
+        "schemaName": "mobile:transport:booking:created",
+        "schemaVersion": ":1.0.0",
+        "mappings": [
           {
-              "fieldName": "field_0",
-              "parameterName": "parameter_0",
-              "dataType": "string",
-              "definedBy": "user"
+            "fieldName": "bookingId",
+            "dataType": "long"
           },
           {
-              "fieldName": "field_1",
-              "parameterName": "parameter_1",
-              "dataType": "int",
-              "definedBy": "user"
+            "fieldName": "userId",
+            "dataType": "long"
           },
           {
-              "fieldName": "field_2",
-              "parameterName": "parameter_2",
-              "dataType": "int",
-              "definedBy": "user"
+            "fieldName": "pickupLocation",
+            "parameterName": "pickup_location",
+            "dataType": "string",
+            "definedBy": "user"
           },
           {
-              "fieldName": "field_3",
-              "parameterName": "parameter_3",
-              "dataType": "boolean",
-              "definedBy": "user"
-          },
-          {
-              "fieldName": "field_4",
-              "parameterName": "parameter_4",
-              "dataType": "int",
-              "definedBy": "user"
+            "fieldName": "dropoffLocation",
+            "parameterName": "dropoff_location",
+            "dataType": "string",
+            "definedBy": "user"
           }
-      ]
-  },
-  {
-      "eventName": "event_1",
-      "stateName": "state_1",
-      "className": "ClassName1",
-      "schemaName": "schema_name_1",
-      "schemaVersion": ":2.5.8",
-      "mappings": [
+        ]
+      },
+      {
+        "eventName": "mobile:transport:booking:cancelled",
+        "stateName": "",
+        "className": "TransportBookingCancelled",
+        "schemaName": "mobile:transport:booking:cancelled",
+        "schemaVersion": ":1.1.0",
+        "mappings": [
           {
-              "fieldName": "field_0",
-              "parameterName": "parameter_0",
-              "dataType": "float",
-              "definedBy": "user"
+            "fieldName": "bookingId",
+            "dataType": "long"
           },
           {
-              "fieldName": "field_1",
-              "parameterName": "parameter_1",
-              "dataType": "int",
-              "definedBy": "user"
+            "fieldName": "userId",
+            "dataType": "long"
           },
           {
-              "fieldName": "field_2",
-              "parameterName": "parameter_2",
-              "dataType": "int",
-              "definedBy": "user"
-          },
-          {
-              "fieldName": "field_3",
-              "parameterName": "parameter_3",
-              "dataType": "string",
-              "definedBy": "user"
-          },
-          {
-              "fieldName": "field_4",
-              "parameterName": "parameter_4",
-              "dataType": "string",
-              "definedBy": "user"
+            "fieldName": "cancellationReason",
+            "parameterName": "cancellation_reason",
+            "dataType": "string",
+            "definedBy": "user"
           }
-      ]
-  },
-  {
-      "eventName": "event_2",
-      "stateName": "state_2",
-      "className": "ClassName2",
-      "schemaName": "schema_name_2",
-      "schemaVersion": ":1.9.4",
-      "mappings": [
+        ]
+      },
+      {
+        "eventName": "mobile:transport:booking:completed",
+        "stateName": "",
+        "className": "TransportBookingCompleted",
+        "schemaName": "mobile:transport:booking:completed",
+        "schemaVersion": ":1.0.0",
+        "mappings": [
           {
-              "fieldName": "field_0",
-              "parameterName": "parameter_0",
-              "dataType": "float",
-              "definedBy": "user"
+            "fieldName": "bookingId",
+            "dataType": "long"
           },
           {
-              "fieldName": "field_1",
-              "parameterName": "parameter_1",
-              "dataType": "float",
-              "definedBy": "user"
+            "fieldName": "userId",
+            "dataType": "long"
           },
           {
-              "fieldName": "field_2",
-              "parameterName": "parameter_2",
-              "dataType": "boolean",
-              "definedBy": "user"
-          },
-          {
-              "fieldName": "field_3",
-              "parameterName": "parameter_3",
-              "dataType": "int",
-              "definedBy": "user"
-          },
-          {
-              "fieldName": "field_4",
-              "parameterName": "parameter_4",
-              "dataType": "boolean",
-              "definedBy": "user"
+            "fieldName": "fare",
+            "dataType": "float"
           }
-      ]
-  },
-  {
-      "eventName": "event_3",
-      "stateName": "state_3",
-      "className": "ClassName3",
-      "schemaName": "schema_name_3",
-      "schemaVersion": ":2.9.7",
-      "mappings": [
+        ]
+      },
+      {
+        "eventName": "mobile:transport:driver:assigned",
+        "stateName": "",
+        "className": "TransportDriverAssigned",
+        "schemaName": "mobile:transport:driver:assigned",
+        "schemaVersion": ":1.2.0",
+        "mappings": [
           {
-              "fieldName": "field_0",
-              "parameterName": "parameter_0",
-              "dataType": "boolean",
-              "definedBy": "user"
+            "fieldName": "bookingId",
+            "dataType": "long"
           },
           {
-              "fieldName": "field_1",
-              "parameterName": "parameter_1",
-              "dataType": "float",
-              "definedBy": "user"
+            "fieldName": "driverId",
+            "dataType": "long"
           },
           {
-              "fieldName": "field_2",
-              "parameterName": "parameter_2",
-              "dataType": "int",
-              "definedBy": "user"
-          },
-          {
-              "fieldName": "field_3",
-              "parameterName": "parameter_3",
-              "dataType": "boolean",
-              "definedBy": "user"
-          },
-          {
-              "fieldName": "field_4",
-              "parameterName": "parameter_4",
-              "dataType": "float",
-              "definedBy": "user"
+            "fieldName": "vehicleId",
+            "parameterName": "vehicle_id",
+            "dataType": "string",
+            "definedBy": "user"
           }
-      ]
-  },
-  {
-      "eventName": "event_4",
-      "stateName": "state_4",
-      "className": "ClassName4",
-      "schemaName": "schema_name_4",
-      "schemaVersion": ":3.8.4",
-      "mappings": [
+        ]
+      },
+      {
+        "eventName": "mobile:transport:driver:arrived",
+        "stateName": "",
+        "className": "TransportDriverArrived",
+        "schemaName": "mobile:transport:driver:arrived",
+        "schemaVersion": ":1.0.0",
+        "mappings": [
           {
-              "fieldName": "field_0",
-              "parameterName": "parameter_0",
-              "dataType": "string",
-              "definedBy": "user"
+            "fieldName": "bookingId",
+            "dataType": "long"
           },
           {
-              "fieldName": "field_1",
-              "parameterName": "parameter_1",
-              "dataType": "string",
-              "definedBy": "user"
-          },
-          {
-              "fieldName": "field_2",
-              "parameterName": "parameter_2",
-              "dataType": "boolean",
-              "definedBy": "user"
-          },
-          {
-              "fieldName": "field_3",
-              "parameterName": "parameter_3",
-              "dataType": "string",
-              "definedBy": "user"
-          },
-          {
-              "fieldName": "field_4",
-              "parameterName": "parameter_4",
-              "dataType": "boolean",
-              "definedBy": "user"
+            "fieldName": "driverId",
+            "dataType": "long"
           }
-      ]
-  },
-  {
-      "eventName": "event_5",
-      "stateName": "state_5",
-      "className": "ClassName5",
-      "schemaName": "schema_name_5",
-      "schemaVersion": ":2.3.5",
-      "mappings": [
+        ]
+      },
+      {
+        "eventName": "mobile:transport:trip:started",
+        "stateName": "",
+        "className": "TransportTripStarted",
+        "schemaName": "mobile:transport:trip:started",
+        "schemaVersion": ":1.0.1",
+        "mappings": [
           {
-              "fieldName": "field_0",
-              "parameterName": "parameter_0",
-              "dataType": "string",
-              "definedBy": "user"
+            "fieldName": "bookingId",
+            "dataType": "long"
           },
           {
-              "fieldName": "field_1",
-              "parameterName": "parameter_1",
-              "dataType": "boolean",
-              "definedBy": "user"
+            "fieldName": "driverId",
+            "dataType": "long"
           },
           {
-              "fieldName": "field_2",
-              "parameterName": "parameter_2",
-              "dataType": "string",
-              "definedBy": "user"
-          },
-          {
-              "fieldName": "field_3",
-              "parameterName": "parameter_3",
-              "dataType": "string",
-              "definedBy": "user"
-          },
-          {
-              "fieldName": "field_4",
-              "parameterName": "parameter_4",
-              "dataType": "float",
-              "definedBy": "user"
+            "fieldName": "startTime",
+            "parameterName": "start_time",
+            "dataType": "string",
+            "definedBy": "user"
           }
-      ]
-  },
-  {
-      "eventName": "event_6",
-      "stateName": "state_6",
-      "className": "ClassName6",
-      "schemaName": "schema_name_6",
-      "schemaVersion": ":1.6.0",
-      "mappings": [
+        ]
+      },
+      {
+        "eventName": "mobile:transport:trip:ended",
+        "stateName": "",
+        "className": "TransportTripEnded",
+        "schemaName": "mobile:transport:trip:ended",
+        "schemaVersion": ":1.0.0",
+        "mappings": [
           {
-              "fieldName": "field_0",
-              "parameterName": "parameter_0",
-              "dataType": "float",
-              "definedBy": "user"
+            "fieldName": "bookingId",
+            "dataType": "long"
           },
           {
-              "fieldName": "field_1",
-              "parameterName": "parameter_1",
-              "dataType": "float",
-              "definedBy": "user"
+            "fieldName": "driverId",
+            "dataType": "long"
           },
           {
-              "fieldName": "field_2",
-              "parameterName": "parameter_2",
-              "dataType": "int",
-              "definedBy": "user"
-          },
-          {
-              "fieldName": "field_3",
-              "parameterName": "parameter_3",
-              "dataType": "string",
-              "definedBy": "user"
-          },
-          {
-              "fieldName": "field_4",
-              "parameterName": "parameter_4",
-              "dataType": "int",
-              "definedBy": "user"
+            "fieldName": "endTime",
+            "parameterName": "end_time",
+            "dataType": "string",
+            "definedBy": "user"
           }
-      ]
-  },
-  {
-      "eventName": "event_7",
-      "stateName": "state_7",
-      "className": "ClassName7",
-      "schemaName": "schema_name_7",
-      "schemaVersion": ":1.7.4",
-      "mappings": [
+        ]
+      },
+      {
+        "eventName": "mobile:transport:payment:processed",
+        "stateName": "",
+        "className": "TransportPaymentProcessed",
+        "schemaName": "mobile:transport:payment:processed",
+        "schemaVersion": ":1.3.0",
+        "mappings": [
           {
-              "fieldName": "field_0",
-              "parameterName": "parameter_0",
-              "dataType": "int",
-              "definedBy": "user"
+            "fieldName": "bookingId",
+            "dataType": "long"
           },
           {
-              "fieldName": "field_1",
-              "parameterName": "parameter_1",
-              "dataType": "string",
-              "definedBy": "user"
+            "fieldName": "paymentId",
+            "parameterName": "payment_id",
+            "dataType": "long",
+            "definedBy": "user"
           },
           {
-              "fieldName": "field_2",
-              "parameterName": "parameter_2",
-              "dataType": "int",
-              "definedBy": "user"
-          },
-          {
-              "fieldName": "field_3",
-              "parameterName": "parameter_3",
-              "dataType": "int",
-              "definedBy": "user"
-          },
-          {
-              "fieldName": "field_4",
-              "parameterName": "parameter_4",
-              "dataType": "float",
-              "definedBy": "user"
+            "fieldName": "amount",
+            "dataType": "float"
           }
-      ]
-  },
-  {
-      "eventName": "event_8",
-      "stateName": "state_8",
-      "className": "ClassName8",
-      "schemaName": "schema_name_8",
-      "schemaVersion": ":3.8.7",
-      "mappings": [
+        ]
+      },
+      {
+        "eventName": "mobile:transport:feedback:submitted",
+        "stateName": "",
+        "className": "TransportFeedbackSubmitted",
+        "schemaName": "mobile:transport:feedback:submitted",
+        "schemaVersion": ":1.0.0",
+        "mappings": [
           {
-              "fieldName": "field_0",
-              "parameterName": "parameter_0",
-              "dataType": "float",
-              "definedBy": "user"
+            "fieldName": "bookingId",
+            "dataType": "long"
           },
           {
-              "fieldName": "field_1",
-              "parameterName": "parameter_1",
-              "dataType": "int",
-              "definedBy": "user"
+            "fieldName": "userId",
+            "dataType": "long"
           },
           {
-              "fieldName": "field_2",
-              "parameterName": "parameter_2",
-              "dataType": "float",
-              "definedBy": "user"
+            "fieldName": "rating",
+            "dataType": "byte"
           },
           {
-              "fieldName": "field_3",
-              "parameterName": "parameter_3",
-              "dataType": "int",
-              "definedBy": "user"
-          },
-          {
-              "fieldName": "field_4",
-              "parameterName": "parameter_4",
-              "dataType": "float",
-              "definedBy": "user"
+            "fieldName": "comments",
+            "parameterName": "comments",
+            "dataType": "string",
+            "definedBy": "user"
           }
-      ]
-  },
-  {
-      "eventName": "event_9",
-      "stateName": "state_9",
-      "className": "ClassName9",
-      "schemaName": "schema_name_9",
-      "schemaVersion": ":3.3.2",
-      "mappings": [
+        ]
+      },
+      {
+        "eventName": "mobile:transport:driver:rating_updated",
+        "stateName": "",
+        "className": "TransportDriverRatingUpdated",
+        "schemaName": "mobile:transport:driver:rating_updated",
+        "schemaVersion": ":1.0.0",
+        "mappings": [
           {
-              "fieldName": "field_0",
-              "parameterName": "parameter_0",
-              "dataType": "int",
-              "definedBy": "user"
+            "fieldName": "driverId",
+            "dataType": "long"
           },
           {
-              "fieldName": "field_1",
-              "parameterName": "parameter_1",
-              "dataType": "int",
-              "definedBy": "user"
+            "fieldName": "newRating",
+            "parameterName": "new_rating",
+            "dataType": "float",
+            "definedBy": "user"
           },
           {
-              "fieldName": "field_2",
-              "parameterName": "parameter_2",
-              "dataType": "float",
-              "definedBy": "user"
-          },
-          {
-              "fieldName": "field_3",
-              "parameterName": "parameter_3",
-              "dataType": "boolean",
-              "definedBy": "user"
-          },
-          {
-              "fieldName": "field_4",
-              "parameterName": "parameter_4",
-              "dataType": "string",
-              "definedBy": "user"
+            "fieldName": "ratingCount",
+            "dataType": "int"
           }
-      ]
-  },
-  {
-      "eventName": "event_10",
-      "stateName": "state_10",
-      "className": "ClassName10",
-      "schemaName": "schema_name_10",
-      "schemaVersion": ":1.5.1",
-      "mappings": [
-          {
-              "fieldName": "field_0",
-              "parameterName": "parameter_0",
-              "dataType": "boolean",
-              "definedBy": "user"
-          },
-          {
-              "fieldName": "field_1",
-              "parameterName": "parameter_1",
-              "dataType": "float",
-              "definedBy": "user"
-          },
-          {
-              "fieldName": "field_2",
-              "parameterName": "parameter_2",
-              "dataType": "boolean",
-              "definedBy": "user"
-          },
-          {
-              "fieldName": "field_3",
-              "parameterName": "parameter_3",
-              "dataType": "float",
-              "definedBy": "user"
-          },
-          {
-              "fieldName": "field_4",
-              "parameterName": "parameter_4",
-              "dataType": "float",
-              "definedBy": "user"
-          }
-      ]
-  },
-  {
-      "eventName": "event_11",
-      "stateName": "state_11",
-      "className": "ClassName11",
-      "schemaName": "schema_name_11",
-      "schemaVersion": ":3.0.9",
-      "mappings": [
-          {
-              "fieldName": "field_0",
-              "parameterName": "parameter_0",
-              "dataType": "string",
-              "definedBy": "user"
-          },
-          {
-              "fieldName": "field_1",
-              "parameterName": "parameter_1",
-              "dataType": "int",
-              "definedBy": "user"
-          },
-          {
-              "fieldName": "field_2",
-              "parameterName": "parameter_2",
-              "dataType": "float",
-              "definedBy": "user"
-          },
-          {
-              "fieldName": "field_3",
-              "parameterName": "parameter_3",
-              "dataType": "boolean",
-              "definedBy": "user"
-          },
-          {
-              "fieldName": "field_4",
-              "parameterName": "parameter_4",
-              "dataType": "int",
-              "definedBy": "user"
-          }
-      ]
-  },
-  {
-      "eventName": "event_12",
-      "stateName": "state_12",
-      "className": "ClassName12",
-      "schemaName": "schema_name_12",
-      "schemaVersion": ":2.8.7",
-      "mappings": [
-          {
-              "fieldName": "field_0",
-              "parameterName": "parameter_0",
-              "dataType": "int",
-              "definedBy": "user"
-          },
-          {
-              "fieldName": "field_1",
-              "parameterName": "parameter_1",
-              "dataType": "string",
-              "definedBy": "user"
-          },
-          {
-              "fieldName": "field_2",
-              "parameterName": "parameter_2",
-              "dataType": "boolean",
-              "definedBy": "user"
-          },
-          {
-              "fieldName": "field_3",
-              "parameterName": "parameter_3",
-              "dataType": "int",
-              "definedBy": "user"
-          },
-          {
-              "fieldName": "field_4",
-              "parameterName": "parameter_4",
-              "dataType": "int",
-              "definedBy": "user"
-          }
-      ]
+        ]
+      }
+    ]
   }
-]
