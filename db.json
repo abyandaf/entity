@@ -1,0 +1,236 @@
+{
+  "events": [
+    {
+      "eventName": "mobile:transport:booking:created",
+      "stateName": "",
+      "className": "TransportBookingCreated",
+      "schemaName": "mobile:transport:booking:created",
+      "schemaVersion": ":1.0.0",
+      "mappings": [
+        {
+          "fieldName": "bookingId",
+          "dataType": "long"
+        },
+        {
+          "fieldName": "userId",
+          "dataType": "long"
+        },
+        {
+          "fieldName": "pickupLocation",
+          "parameterName": "pickup_location",
+          "dataType": "string",
+          "definedBy": "user"
+        },
+        {
+          "fieldName": "dropoffLocation",
+          "parameterName": "dropoff_location",
+          "dataType": "string",
+          "definedBy": "user"
+        }
+      ]
+    },
+    {
+      "eventName": "mobile:transport:booking:cancelled",
+      "stateName": "",
+      "className": "TransportBookingCancelled",
+      "schemaName": "mobile:transport:booking:cancelled",
+      "schemaVersion": ":1.1.0",
+      "mappings": [
+        {
+          "fieldName": "bookingId",
+          "dataType": "long"
+        },
+        {
+          "fieldName": "userId",
+          "dataType": "long"
+        },
+        {
+          "fieldName": "cancellationReason",
+          "parameterName": "cancellation_reason",
+          "dataType": "string",
+          "definedBy": "user"
+        }
+      ]
+    },
+    {
+      "eventName": "mobile:transport:booking:completed",
+      "stateName": "",
+      "className": "TransportBookingCompleted",
+      "schemaName": "mobile:transport:booking:completed",
+      "schemaVersion": ":1.0.0",
+      "mappings": [
+        {
+          "fieldName": "bookingId",
+          "dataType": "long"
+        },
+        {
+          "fieldName": "userId",
+          "dataType": "long"
+        },
+        {
+          "fieldName": "fare",
+          "dataType": "float"
+        }
+      ]
+    },
+    {
+      "eventName": "mobile:transport:driver:assigned",
+      "stateName": "",
+      "className": "TransportDriverAssigned",
+      "schemaName": "mobile:transport:driver:assigned",
+      "schemaVersion": ":1.2.0",
+      "mappings": [
+        {
+          "fieldName": "bookingId",
+          "dataType": "long"
+        },
+        {
+          "fieldName": "driverId",
+          "dataType": "long"
+        },
+        {
+          "fieldName": "vehicleId",
+          "parameterName": "vehicle_id",
+          "dataType": "string",
+          "definedBy": "user"
+        }
+      ]
+    },
+    {
+      "eventName": "mobile:transport:driver:arrived",
+      "stateName": "",
+      "className": "TransportDriverArrived",
+      "schemaName": "mobile:transport:driver:arrived",
+      "schemaVersion": ":1.0.0",
+      "mappings": [
+        {
+          "fieldName": "bookingId",
+          "dataType": "long"
+        },
+        {
+          "fieldName": "driverId",
+          "dataType": "long"
+        }
+      ]
+    },
+    {
+      "eventName": "mobile:transport:trip:started",
+      "stateName": "",
+      "className": "TransportTripStarted",
+      "schemaName": "mobile:transport:trip:started",
+      "schemaVersion": ":1.0.1",
+      "mappings": [
+        {
+          "fieldName": "bookingId",
+          "dataType": "long"
+        },
+        {
+          "fieldName": "driverId",
+          "dataType": "long"
+        },
+        {
+          "fieldName": "startTime",
+          "parameterName": "start_time",
+          "dataType": "string",
+          "definedBy": "user"
+        }
+      ]
+    },
+    {
+      "eventName": "mobile:transport:trip:ended",
+      "stateName": "",
+      "className": "TransportTripEnded",
+      "schemaName": "mobile:transport:trip:ended",
+      "schemaVersion": ":1.0.0",
+      "mappings": [
+        {
+          "fieldName": "bookingId",
+          "dataType": "long"
+        },
+        {
+          "fieldName": "driverId",
+          "dataType": "long"
+        },
+        {
+          "fieldName": "endTime",
+          "parameterName": "end_time",
+          "dataType": "string",
+          "definedBy": "user"
+        }
+      ]
+    },
+    {
+      "eventName": "mobile:transport:payment:processed",
+      "stateName": "",
+      "className": "TransportPaymentProcessed",
+      "schemaName": "mobile:transport:payment:processed",
+      "schemaVersion": ":1.3.0",
+      "mappings": [
+        {
+          "fieldName": "bookingId",
+          "dataType": "long"
+        },
+        {
+          "fieldName": "paymentId",
+          "parameterName": "payment_id",
+          "dataType": "long",
+          "definedBy": "user"
+        },
+        {
+          "fieldName": "amount",
+          "dataType": "float"
+        }
+      ]
+    },
+    {
+      "eventName": "mobile:transport:feedback:submitted",
+      "stateName": "",
+      "className": "TransportFeedbackSubmitted",
+      "schemaName": "mobile:transport:feedback:submitted",
+      "schemaVersion": ":1.0.0",
+      "mappings": [
+        {
+          "fieldName": "bookingId",
+          "dataType": "long"
+        },
+        {
+          "fieldName": "userId",
+          "dataType": "long"
+        },
+        {
+          "fieldName": "rating",
+          "dataType": "byte"
+        },
+        {
+          "fieldName": "comments",
+          "parameterName": "comments",
+          "dataType": "string",
+          "definedBy": "user"
+        }
+      ]
+    },
+    {
+      "eventName": "mobile:transport:driver:rating_updated",
+      "stateName": "",
+      "className": "TransportDriverRatingUpdated",
+      "schemaName": "mobile:transport:driver:rating_updated",
+      "schemaVersion": ":1.0.0",
+      "mappings": [
+        {
+          "fieldName": "driverId",
+          "dataType": "long"
+        },
+        {
+          "fieldName": "newRating",
+          "parameterName": "new_rating",
+          "dataType": "float",
+          "definedBy": "user"
+        },
+        {
+          "fieldName": "ratingCount",
+          "dataType": "int"
+        }
+      ]
+    }
+  ]
+}
